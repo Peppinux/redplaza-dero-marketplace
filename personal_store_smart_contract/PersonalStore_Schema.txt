@@ -1,0 +1,29 @@
+type
+title
+description
+ownerAddress
+reviewFee
+owner
+balance
+tmpOwner
+
+offChainJSONInventoryURI
+onChainJSONInventory
+productsCount
+    PRODUCT_[ProductID]_
+        Name
+        Description
+        Price
+        IsAvailable
+        ImageURI
+        IsRemoved
+totalStars
+reviewsCount
+reviewIDByAuthor_[rawAddress]
+    REVIEW_[ReviewID]_
+            Stars
+            Comment
+            Author (is raw address)
+            TopoHeight
+            Reply
+            ReplyTopoHeight

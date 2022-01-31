@@ -1,0 +1,41 @@
+type
+title
+description
+registrationsOpen
+registrationFee
+reviewFee
+vendorsCount
+owner
+balance
+tmpOwner
+
+[rawAddress]_VendorID
+
+VENDOR_[VendorID]_
+        Address
+        Name
+        Description
+        OffChainJSONInventoryURI
+        OnChainJSONInventory
+        IsRegistered
+        IsBanned
+        BanReason
+        RegisteredAtTopoHeight
+        ProductsCount
+        _PRODUCT_[ProductID]_
+            Name
+            Description
+            Price
+            IsAvailable
+            ImageURI
+            IsRemoved
+        TotalStars
+        ReviewsCount
+        ReviewIDByAuthor_[rawAddress]
+        _REVIEW_[ReviewID]_
+            Stars
+            Comment
+            Author (is raw address)
+            TopoHeight
+            Reply
+            ReplyTopoHeight
