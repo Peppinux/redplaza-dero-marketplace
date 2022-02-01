@@ -51,5 +51,7 @@ Note that they have yet to be updated to use the latest functions added by Capta
 ## The SERVICE (WIP)
 As you can see, there is a folder with a proof of concept in its infancy. Some of logic is already written there, but it will need to change. Why? Because the service needs a frontend. People (buyers but also sellers) are used to do their shopping on webpages, not CLIs. That's why I feel that the best option is to use a WASM compiled version of my Golang POC, which will use WebSockets instead of RPC, is run on a React frontend and uses IndexedDB for storage/caching. All of this can still happen **locally**, but there could also exist an hosted version, perhaps on the Foundation's domain.
 
+In order to understand how the service is going to work, I suggest to check out specifically https://github.com/Peppinux/redplaza-dero-marketplace/blob/main/service_proof_of_concept/rpc_consts.go and https://github.com/Peppinux/redplaza-dero-marketplace/blob/main/service_proof_of_concept/order_content.go 
+
 ## Limits of Redplaza
 The main one is that it is very vendor-centric. Because of the how products are stored (on-chain and off-chain) which is, not on some SQL server, I see it more like a collection of sellers rather than your typical market where the products are the focus. But this limit may be overcame.
